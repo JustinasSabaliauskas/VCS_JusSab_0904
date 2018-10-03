@@ -57,13 +57,15 @@ def checkAnswer(chosenAnswer):
         from spelione import change
         return change()
 
+
 restart = "taip"
 while restart == "TAIP" or restart == "taip":
 
-    caveNumber = chooseAnswer()
+    answerNumber = chooseAnswer()
 
-    checkAnswer(caveNumber)
+    checkAnswer(answerNumber)
     print("Jei nori bandyti savo sekme dar karta? Rasyk taip!")
+
     restart = raw_input()
 else:
     print ("Greitai grizk, tikiu, dar pasimatysim!")

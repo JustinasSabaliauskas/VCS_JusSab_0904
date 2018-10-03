@@ -56,12 +56,16 @@ def guessing():
             else:
                 print("Tokios raides zodyje nera, bandyk dar karta!")
                 guess_taken += 1
-                if guess_taken == 10:
+                if guess_taken == 6:
                     time.sleep(2)
-                    print" Pralaimejai, zodis, kuri turejai atspeti buvo", secretWord.strip('\n')
+                    print" Pralaimejai, zodis, kuri turejai atspeti buvo:", secretWord.strip('\n')
 
 
 change()
 guessing()
 
-print "Galas tau!!!!"
+def end():
+    from dungeon2 import checkAnswer
+    return checkAnswer()
+
+end()
